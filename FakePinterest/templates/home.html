@@ -14,6 +14,26 @@
 
 <body>
        <h1>FakePinterest - Home</h1>
+
+
+{%block formulario %}
+<form action="" method="post">
+
+{{ form.csrf_token }}
+    {{form.email.label()}}
+    {{form.email()}}
+    {{form.senha.label()}}
+    {{form.senha()}}
+    {{form.botao_confirmacao()}}
+
+
+
+</form>
+
+{%endblock%}
+
+
+
 </body>
 {% endblock %}
 </html>
